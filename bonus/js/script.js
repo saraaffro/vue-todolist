@@ -41,11 +41,7 @@ createApp({
             this.todos.splice(index, 1);
         },
         changeDone(i){
-            if(this.todos[i].done === true){
-                this.todos[i].done = false;
-            } else{
-                this.todos[i].done = true;
-            }
+            this.todos[i].done = !this.todos[i].done;
         }
     }
 }).mount("#app")
