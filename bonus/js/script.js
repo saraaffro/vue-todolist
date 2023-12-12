@@ -33,7 +33,6 @@ createApp({
                 this.taskMessage = "";
                 this.error = false;
             }
-            
         },
         removeTask(index){
             this.todos.splice(index, 1);

@@ -14,25 +14,29 @@
     <title>To do list</title>
 </head>
 <body>
+    <main>
+        <div id="app" class="container">
+            <!-- intestazione -->
+            <h1>BARBIE TO DO LIST</h1>
     
-    <div id="app" class="container">
-        <!-- intestazione -->
-        <h1>TO DO LIST</h1>
-
-        <!-- gestione input todo tasks -->
-        <div class="new-task">
-            <input type="text" placeholder="Nuova Task" v-model="taskMessage.text">
-            <button @click="addTask">Aggiungi</button>
+            <!-- gestione input todo tasks -->
+            <div class="new-task">
+                <input type="text" placeholder="Nuova Task" v-model="taskMessage.text">
+                <button @click="addTask">Aggiungi</button>
+                
+                <div class="errors" v-if="error">Devi inserire almeno 5 caratteri</div>
+            </div>
+    
+            <!-- output tasks -->
+            <div class="tasks-container">
+                <ul>
+                    <li class="task" v-for="(task, i) in todos" :class="task.done === true ? 'done': ''">{{task.text}}<i class="fa-solid fa-x" @click="removeTask(i)"></i></li>
+                </ul>
+            </div>
+    
         </div>
-
-        <!-- output tasks -->
-        <div class="tasks-container">
-            <ul>
-                <li class="task" v-for="(task, i) in todos" :class="task.done === true ? 'done': ''">{{task.text}}<i class="fa-solid fa-x" @click="removeTask(i)"></i></li>
-            </ul>
-        </div>
-
-    </div>
+    </main>
+    
 
     <!-- inclusione js -->
     <script src="js/script.js"></script>

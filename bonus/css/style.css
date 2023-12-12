@@ -4,31 +4,56 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(248, 140, 198);
+}
+
+
 .container{
-    width: 40%;
-    margin: 0 auto;
-    padding: 20px 0;
+    width: 50%;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
 }
 
 h1{
     text-align: center;
-    padding: 20px 0;
+    color: rgb(251, 162, 217);
+    margin-bottom: 20px;
 }
 
 .new-task{
     text-align: center;
 }
 
+input{
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    border-color: rgb(248, 140, 198);
+    color: rgb(240, 54, 168);
+}
+
+button{
+    padding: 3px;
+    background-color: rgb(248, 140, 198);
+    border-color: rgb(248, 140, 198);
+    border-radius: 5px;
+    color: white;
+}
+
 .tasks-container{
-    background-color: antiquewhite;
+    background-color: rgb(251, 162, 217);
     border-radius: 20px;
     margin: 20px 0;
     padding: 20px;
+    color: white;
 }
 
 li{
     list-style-type: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(240, 54, 168);
     position: relative;
     padding: 8px 0;
     cursor: pointer;
@@ -41,6 +66,7 @@ li{
     bottom: 12px;
     cursor: pointer;
     padding-right: 2px;
+    color: white;
 }
 
 .done{
@@ -54,7 +80,7 @@ li{
 }
 
 .errors{
-    color: blue;
+    color: rgb(240, 54, 168);
     text-align: right;
     padding: 10px 20px;
 }
