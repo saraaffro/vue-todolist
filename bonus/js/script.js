@@ -30,7 +30,10 @@ createApp({
                 this.error = true;
             } else{
                 this.todos.unshift(this.taskMessage);
-                this.taskMessage = "";
+                this.taskMessage = {
+                    text: "",
+                    done: "false"
+                };
                 this.error = false;
             }
         },

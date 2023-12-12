@@ -21,7 +21,7 @@
 
         <!-- gestione input todo tasks -->
         <div class="new-task">
-            <input type="text" placeholder="Nuova Task" v-model="taskMessage.text" v-on:keyup.enter="addTask">
+            <input type="text" placeholder="Nuova Task" v-model="taskMessage.text" v-on:keyup.enter="addTask()">
             <button @click="addTask">Aggiungi</button>
 
             <div class="errors" v-if="error">Devi inserire almeno 5 caratteri</div>
