@@ -46,7 +46,8 @@ button{
 .tasks-container{
     background-color: rgb(251, 162, 217);
     border-radius: 20px;
-    margin: 20px 0;
+    width: 95%;
+    margin: 20px auto;
     padding: 20px;
     color: white;
 }
