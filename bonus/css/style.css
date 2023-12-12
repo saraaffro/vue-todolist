@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.new-task{
+    text-align: center;
+}
+
+.tasks-container{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+li{
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding: 8px 0;
+}
+
+.fa-x{
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    cursor: pointer;
+    padding-right: 2px;
+}
+
+.done{
+    text-decoration: line-through;
+}
