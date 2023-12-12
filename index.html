@@ -28,7 +28,7 @@
         <!-- output tasks -->
         <div class="tasks-container">
             <ul>
-                <li class="task" v-for="(task, i) in todos" :class="task.done === true ? 'done': ''">{{task.text}}<i class="fa-solid fa-x"></i></li>
+                <li class="task" v-for="(task, i) in todos" :class="task.done === true ? 'done': ''">{{task.text}}<i class="fa-solid fa-x" @click="removeTask(i)"></i></li>
             </ul>
         </div>
 
