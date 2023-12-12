@@ -30,6 +30,7 @@ li{
     border-bottom: 1px solid black;
     position: relative;
     padding: 8px 0;
+    cursor: pointer;
 }
 
 .fa-x{
