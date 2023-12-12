@@ -21,12 +21,19 @@ createApp({
                 text: "",
                 done: false
             },
+            error: false
         }
     },
     methods: {
         addTask(){
-            this.todos.unshift(this.taskMessage);
-            this.taskMessage = "";
+            if(this.taskMessage.text.length < 5){
+                this.error = true;
+            } else{
+                this.todos.unshift(this.taskMessage);
+                this.taskMessage = "";
+                this.error = false;
+            }
+            
         },
         removeTask(index){
             this.todos.splice(index, 1);

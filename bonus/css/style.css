@@ -12,6 +12,7 @@
 
 h1{
     text-align: center;
+    padding: 20px 0;
 }
 
 .new-task{
@@ -44,4 +45,16 @@ li{
 
 .done{
     text-decoration: line-through;
+}
+
+.no-tasks{
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.errors{
+    color: blue;
+    text-align: right;
+    padding: 10px 20px;
 }
