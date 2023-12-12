@@ -21,8 +21,8 @@
 
         <!-- gestione input todo tasks -->
         <div class="new-task">
-            <input type="text" placeholder="Nuova Task">
-            <button>Aggiungi</button>
+            <input type="text" placeholder="Nuova Task" v-model="taskMessage.text">
+            <button @click="addTask">Aggiungi</button>
         </div>
 
         <!-- output tasks -->

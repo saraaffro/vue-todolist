@@ -16,12 +16,20 @@ createApp({
                     text: 'Fare il bucato',
                     done: false
                 }
-            ]
+            ],
+            taskMessage: {
+                text: "",
+                done: false
+            },
         }
     },
     methods: {
+        addTask(){
+            this.todos.unshift(this.taskMessage);
+            this.taskMessage = "";
+        },
         removeTask(index){
-            this.todos.splice(index, 1)
+            this.todos.splice(index, 1);
         }
     }
 }).mount("#app")
