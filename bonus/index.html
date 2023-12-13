@@ -30,7 +30,7 @@
         <!-- output tasks -->
         <div class="tasks-container">
             <ul v-if="todos.length > 0">
-                <li class="task" v-for="(task, i) in todos" :class="task.done === true ? 'done': ''" @click="changeDone(i)">{{task.text}}<i class="fa-solid fa-x" @click="removeTask(i)"></i></li>
+                <li class="task" v-for="(task, i) in todos"><span :class="task.done === true ? 'done': ''" @click="changeDone(i)">{{task.text}}</span><i class="fa-solid fa-x" @click="removeTask(i)"></i></li>
             </ul>
             <p class="no-tasks" v-else>Non hai nulla da fare 🙃</p>
         </div>

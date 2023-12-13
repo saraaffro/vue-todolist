@@ -74,6 +74,11 @@ li{
     text-decoration: line-through;
 }
 
+span{
+    display: inline-block;
+    width: 100%;
+}
+
 .no-tasks{
     font-size: 20px;
     padding: 10px 0;
